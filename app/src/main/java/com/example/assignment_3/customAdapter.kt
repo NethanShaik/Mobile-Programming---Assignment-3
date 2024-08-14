@@ -1,3 +1,4 @@
+
 package com.example.assignment_3
 
 import android.view.LayoutInflater
@@ -36,4 +37,3 @@ class customAdapter(private val taskList: List<Task>) :
 
     override fun getItemCount() = taskList.size
 }
-
