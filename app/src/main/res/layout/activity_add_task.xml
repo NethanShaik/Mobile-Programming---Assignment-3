@@ -5,54 +5,49 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".AddTask">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="409dp"
-        android:layout_height="74dp"
-        android:background="@color/blue_crab" />
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Tasks to accomplish today!"
-        android:textSize="25dp"
-        android:textStyle="bold"
+        android:background="@color/blue_crab"
+        app:title="Add a new task"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/add_new_task"
+        android:layout_width="363dp"
+        android:layout_height="62dp"
+        android:hint="Add a new task"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.132" />
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/task_list"
-        android:layout_width="410dp"
-        android:layout_height="657dp"
+    <EditText
+        android:id="@+id/deadline"
+        android:layout_width="355dp"
+        android:layout_height="60dp"
+        android:hint="Select a date for deadline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.339" />
 
     <Button
-        android:id="@+id/add_task"
-        android:layout_width="61dp"
-        android:layout_height="62dp"
+        android:id="@+id/create_task"
+        android:layout_width="363dp"
+        android:layout_height="56dp"
         android:backgroundTint="@color/blue_crab"
-        android:text="+"
-        android:textSize="30dp"
+        android:text="Create Task"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955" />
+        app:layout_constraintVertical_bias="0.863" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
